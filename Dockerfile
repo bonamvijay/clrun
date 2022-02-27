@@ -3,7 +3,7 @@ FROM node:16.14.0 as build
 WORKDIR /source
 
 # Copy the package lock file into the container
-COPY package*.json .
+COPY package*.json ./
 # Run ci only for the production dependencies
 RUN npm ci
 
